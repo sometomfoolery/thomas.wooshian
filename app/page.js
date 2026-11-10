@@ -1,4 +1,7 @@
 import styles from './page.module.css';
+import { getSession } from "@/lib/auth";
+import LoginForm from "@/components/LoginForm";
+import LogoutButton from "@/components/LogoutButton";
 
 export default async function Home() {
   const user = await getSession();
