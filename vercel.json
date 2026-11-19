@@ -1,8 +1,9 @@
 {
-    "crons": [
-        {
+    "schedule": {
+        "keep_alive": {
             "path": "/api/cron/keep_alive",
-            "schedule": "0 12 * * *"
+            "schedule": "0 12 * * *",
+            "requestMethod": "GET"
         }
-    ]
+    }
 }
